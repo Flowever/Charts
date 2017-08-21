@@ -858,6 +858,9 @@ public class BarLineChartViewBase: ChartViewBase, BarLineScatterCandleBubbleChar
                 _outerScrollView?.scrollEnabled = true
                 _outerScrollView = nil
             }
+
+            self.highlightValues(nil)
+            self.setNeedsDisplay()
         }
     }
     
